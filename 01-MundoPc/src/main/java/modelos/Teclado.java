@@ -12,7 +12,7 @@ public class Teclado extends DispositivoEntrada {
 
     @Override
     public String toString() {
-        return "modelos.Teclado{" +
+        return "Teclado{" +
                 "idTeclado=" + idTeclado +
                 ", " + super.toString() +
                 '}';

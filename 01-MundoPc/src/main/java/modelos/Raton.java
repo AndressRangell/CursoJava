@@ -12,7 +12,7 @@ public class Raton extends DispositivoEntrada {
 
     @Override
     public String toString() {
-        return "modelos.Raton{" +
+        return "Raton{" +
                 "idRaton=" + idRaton +
                 ", " + super.toString() +
                 '}';
