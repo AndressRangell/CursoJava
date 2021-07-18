@@ -7,7 +7,7 @@ let persona = {
     email: 'juan@gmail.com',
     edad: 28,
     nombreCompleto(){
-        return this.nombre + ' ' + this.apellido;
+        return `${this.nombre} ${this.apellido}`;
     }
 }
 
@@ -57,7 +57,7 @@ console.log();
 let empleado = {
     nombre: 'Jorge',
     telefono: '123456',
-    salario(){
+    get salario(){
         return 5000;
     },
     set tel(nuevoTelefono){
@@ -65,6 +65,6 @@ let empleado = {
     }
 }
 
-console.log(empleado.salario());
+console.log(empleado.salario);
 empleado.tel = '555';
 console.log(empleado.telefono);
