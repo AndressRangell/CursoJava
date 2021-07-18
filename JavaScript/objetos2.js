@@ -1,3 +1,5 @@
+'use strict';
+
 //Funcion constructor de objeto de tipo Persona
 function Persona(nombre, apellido, email){
     this.nombre = nombre;
