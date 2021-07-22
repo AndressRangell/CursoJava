@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio DOM con JS</title>
+</head>
+<body>
+    <h1 id="titulo" class="azul" style="color: red;">Ejercicio DOM con JavaScript</h1>
+    <p id="parrafo" class="azul">Párrafo 1</p>
+    <p id="parrafo" class="azul">Párrafo 2</p>
+    <p id="parrafo">Párrafo 3</p>
+    <br/>
+    <form id="formulario">
+        <label for="nombre">Nombre: </label>
+        <input type="text" id="nombre">
+        <br/>
+        <label for="apellido">Apellido: </label>
+        <input type="text" id="apellido">
+    </form>
+    <button onclick="mostrarDatos()">Enviar</button>
+    <br/>
+    <button onclick="cambiarColorTitulo()">Cambiar color del titulo</button>
+    <br/>
+    <button onclick="cambiarTamanoTitulo()">Cambiar tamaño del titulo</button>
+    <br/>
+    <label id="respuesta"></label>
+</body>
+<script src="script.js"></script>
+</html>
