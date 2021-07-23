@@ -47,3 +47,50 @@ function cambiarTamanoTitulo(){
     let titulo = document.getElementById('titulo');
     titulo.style.fontSize = '10px';
 }
+
+//probamos el método onload que se ejecuta al cargar la página
+function entrar(){
+    alert('Entrando a la página web');
+    let texto = '';
+    if(navigator.cookieEnabled){
+        texto = 'Cookies habilitadas';
+    }else{
+        texto = 'Cookies deshabilitadas';
+    }
+    document.getElementById('encabezado2').innerHTML = texto;
+}
+
+//probamos el método onchange que se ejecuta cuando se cambia el focus de un input
+function onChange(elemento){
+    elemento.value = elemento.value.toUpperCase();
+}
+
+//probamos el método onmouseover se ejecuta cuando pones el mouse sobre el elemento
+function verde(elemento){
+    elemento.style.color = 'green';
+}
+
+//probamos el método onmouseout se ejecuta cuando quitas el mouse del elemento
+function rojo(elemento){
+    elemento.style.color = 'red';
+}
+
+//probamos el método onmousedown se ejecuta cuando haces click sobre el elemento
+function azul(elemento){
+    elemento.style.color = 'blue';
+}
+
+//probamos el método onmouseup se ejecuta cuando sueltas el click del elemento
+function amarillo(elemento){
+    elemento.style.color = 'yellow';
+}
+
+//probamos el método onfocus se ejecuta al poner foco en un elemento
+function focus(elemento){
+    elemento.style.background = 'Yellow';
+}
+
+//probamos el método onblur se ejecuta al salir del foco de un elemento
+function blur(elemento){
+    elemento.style.background = 'white';
+}
