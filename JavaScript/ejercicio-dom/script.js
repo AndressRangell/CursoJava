@@ -86,11 +86,11 @@ function amarillo(elemento){
 }
 
 //probamos el método onfocus se ejecuta al poner foco en un elemento
-function focus(elemento){
-    elemento.style.background = 'Yellow';
-}
+document.getElementById('input').addEventListener('focus', () => {
+    document.getElementById('input').style.background = 'Yellow';
+});
 
 //probamos el método onblur se ejecuta al salir del foco de un elemento
-function blur(elemento){
-    elemento.style.background = 'white';
-}
+document.getElementById('input').addEventListener('blur', () => {
+    document.getElementById('input').style.background = 'white';
+});
