@@ -62,11 +62,11 @@ let cargarCabecero = () => {
 }
 
 const formatoMoneda = valor => {
-    return valor.toLocaleString('en-US', {style:'currency', currency: 'USD', minimumFractionDigits: 2});
+    return valor.toLocaleString('en-US', {style:'currency', currency: 'USD', minimumFractionDigits: 0});
 }
 
 const formatoPorcentaje = valor => {
-    return valor.toLocaleString('en-US', {style: 'percent', minimumFractionDigits: 2});
+    return valor.toLocaleString('en-US', {style: 'percent', minimumFractionDigits: 0});
 }
 
 const cargarIngresos = () => {
