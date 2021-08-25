@@ -5,7 +5,9 @@ const {crearArchivo} = require('./helpers/multiply');
 
 console.clear();
 
-const base = 5;
+//obtenemos los argumentos enviados desde consola
+const [ , , argumento = 'base=5'] = process.argv;
+const [ , base = 5] = argumento.split('=');
 
 crearArchivo(base)
     .then(response => console.log(`Se creo correctamente el archivo ${response}`))
