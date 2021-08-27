@@ -3,6 +3,7 @@ body, .default{
     font-family: "Lucida Sans Unicode", "Lucida Grande", "Sans-Serif";
     font-size: 12px;
     color: #669;
+    width: 200px;
 }
 
 #enfasis-columna{
@@ -38,4 +39,11 @@ body, .default{
 #enfasis-columna tr:hover td{
     color: #339;
     background: #EFF2FF;
+}
+
+textArea{
+    max-width: 200px;
+    min-width: 200px;
+    min-height: 50px;
+    max-height: 200px
 }

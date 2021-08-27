@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <form name="form1" action="/FormularioHTML/Servlet" method="POST" onsubmit="return validateForm(this)">
+    <form  name="form1" action="/FormularioHTML/Servlet" method="POST" onsubmit="return validarFormulario(this)">
 
         <input type="hidden" name="oculto" value="valorOculto" />
 
@@ -40,7 +40,7 @@
                     &nbsp;&nbsp;&nbsp;
                     .Net <input type="checkbox" name="tecnologia" value="net">
                     &nbsp;&nbsp;&nbsp;
-                    Pho <input type="checkbox" name="tecnologia" value="php">
+                    Php <input type="checkbox" name="tecnologia" value="php">
                 </td>
             </tr>
 
@@ -70,7 +70,6 @@
                 <td class="columna">Música favorita:</td>
                 <td>
                     <select name="musica" class="default" multiple>
-                        <option value="">Seleccione una opción</option>
                         <option value="rock">Rock</option>
                         <option value="pop">Pop</option>
                         <option value="salsa">Salsa</option>
@@ -81,8 +80,8 @@
             <tr>
                 <td class="columna">Comentarios:</td>
                 <td>
-                    <textarea name="comentarios" cols="30" rows="2" class="default"
-                        onfocus="this.select()">Escribir un texto</textarea>
+                    <textarea name="comentarios" cols="30" rows="2" class="default" 
+                        onfocus="this.select()" placeholder="Escribir un texto"></textarea>
                 </td>
             </tr>
 
@@ -98,6 +97,9 @@
         </table>
 
     </form>
+    
+    <a href="/FormularioHTML/ServletHeader">Ir al link de los Servlets</a>
+    
 </body>
 
 </html>
