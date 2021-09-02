@@ -7,4 +7,15 @@ function listadoFrutas(fruta1, fruta2, ...masFrutas){
     console.log(`Resto de frutas: ${masFrutas}`);
 }
 
-listadoFrutas("Manzana", "Pera");
+listadoFrutas("Manzana", "Pera", "Uva", "Banano", "Sandía");
+
+//Parámetros de tipo SPREAD
+function listadoVerduras(verdura1, verdura2, verdura3){
+    console.log(`Verduras principales: ${verdura1}`);
+    console.log(`Verdura 2: ${verdura2}`);
+    console.log(`Verdura 3: ${verdura3}`);
+}
+
+const principales = ["Pimentón", "Tomate"];
+
+listadoVerduras(principales, "Cebolla", "Zanahoria");
