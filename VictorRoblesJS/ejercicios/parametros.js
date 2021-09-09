@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 //Parámetros de tipo REST
 function listadoFrutas(fruta1, fruta2, ...masFrutas){
