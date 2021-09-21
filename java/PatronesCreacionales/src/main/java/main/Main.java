@@ -32,7 +32,7 @@ public class Main {
         //builder();
         
         //Patrón Prototype
-        prototype();
+        //prototype();
         
     }
     
