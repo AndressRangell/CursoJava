@@ -21,6 +21,15 @@ import memento.Cliente;
 import observer.Producto;
 import observer.Vendedor;
 import state.Auto;
+import strategy.Deposito2;
+import strategy.Retiro2;
+import strategy.Transaccion2;
+import template_method.Administrador;
+import template_method.Gerente;
+import visitor.DescuentoComun;
+import visitor.IVisitor;
+import visitor.Lavadora;
+import visitor.Manzana;
 
 public class Main {
 
@@ -45,7 +54,13 @@ public class Main {
         //observer();
         
         //Patrón State
-        state();
+        //state();
+        
+        //Patrón Template Method
+        //templateMethod();
+        
+        //Patrón Visitor
+        //visitor();
 
     }
 
@@ -158,6 +173,45 @@ public class Main {
         auto.acelerar();
         auto.acelerar();
         auto.apagar();
+    }
+    
+    private static void strategy(){
+        //Este patrón permite ejecutar un algoritmo o método en concreto
+        //dependiendo del objeto enviado
+        
+        Transaccion2 deposito = new Transaccion2(new Deposito2());
+        System.out.println(deposito.ejecutarTransaccion(200, 100));
+        
+        Transaccion2 retiro = new Transaccion2(new Retiro2());
+        System.out.println(retiro.ejecutarTransaccion(400, 150));
+    }
+    
+    private static void templateMethod(){
+        //Este patrón define métodos comunes para objetos en una clase padre
+        //y los métodos que cambian los define abstractos para que sean los hijos
+        //los que implementen su lógica
+        
+        Gerente gerente = new Gerente();
+        Administrador administrador = new Administrador();
+        
+        gerente.autenticarse();
+        gerente.trabajar();
+        
+        administrador.autenticarse();
+        administrador.trabajar();
+    }
+    
+    private static void visitor(){
+        //Pretende separar un algoritmo de la estructura de un objeto
+        //cuando queramos aplicar otro descuento diferente funcionará igual
+        
+        Manzana manzana = new Manzana();
+        Lavadora lavadora = new Lavadora();
+        
+        IVisitor descuento = new DescuentoComun();
+        
+        System.out.println(manzana.aplicarDescuento(descuento));
+        System.out.println(lavadora.aplicarDescuento(descuento));
     }
 
 }
