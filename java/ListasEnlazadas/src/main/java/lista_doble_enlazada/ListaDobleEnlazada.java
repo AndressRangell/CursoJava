@@ -9,8 +9,7 @@ public class ListaDobleEnlazada {
     private int tamano = 0;
     
     public ListaDobleEnlazada(){
-        this.primero = null;
-        this.ultimo = null;
+        this.primero = this.ultimo = null;
     }
     
     public void agregarInicio(int dato){
@@ -35,6 +34,28 @@ public class ListaDobleEnlazada {
             ultimo = nuevo;
         }
         tamano++;
+    }
+    
+    public void eliminarInicio(){
+        if(tamano > 0){
+            if(tamano == 1){
+                primero = ultimo = null;
+            }else{
+                primero.siguiente.anterior = null;
+                primero = primero.siguiente;
+            }
+        }
+    }
+    
+    public void eliminarFinal(){
+        if(tamano > 0){
+            if(tamano == 1){
+                primero = ultimo = null;
+            }else{
+                ultimo.anterior.siguiente = null;
+                ultimo = ultimo.anterior;
+            }
+        }
     }
     
     public void verLista(){

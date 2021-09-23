@@ -1,5 +1,6 @@
 package Main;
 
+import lista_doble_circular.ListaDobleCircular;
 import lista_doble_enlazada.ListaDobleEnlazada;
 import lista_enlazada.ListaEnlazada;
 import lista_enlazada_ordenada.ListaEnlazadaOrdenada;
@@ -12,7 +13,9 @@ public class Main {
         
         //listaEnlazadaOrdenada();
         
-        listaDobleEnlazada();
+        //listaDobleEnlazada();
+        
+        listaCircular();
         
     }
 
@@ -45,11 +48,23 @@ public class Main {
         ListaDobleEnlazada lista = new ListaDobleEnlazada();
         
         lista.agregarInicio(4);
-        lista.agregarInicio(2);
-        lista.agregarInicio(7);
         lista.agregarFinal(9);
         lista.agregarInicio(1);
         lista.agregarFinal(8);
+        lista.eliminarInicio();
+        lista.eliminarFinal();
+        
+        lista.verLista();
+    }
+
+    private static void listaCircular() {
+        ListaDobleCircular lista = new ListaDobleCircular();
+        
+        lista.agregar(5);
+        lista.agregar(10);
+        lista.agregar(15);
+        lista.agregar(20);
+        lista.eliminar(15);
         
         lista.verLista();
     }
