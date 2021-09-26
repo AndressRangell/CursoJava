@@ -15,7 +15,7 @@ public class Main {
         
         //listaDobleEnlazada();
         
-        listaCircular();
+        //listaCircular();
         
     }
 

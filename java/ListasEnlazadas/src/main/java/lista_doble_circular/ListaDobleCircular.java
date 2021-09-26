@@ -6,10 +6,9 @@ public class ListaDobleCircular {
     
     private Nodo primero;
     private Nodo ultimo;
-    private int tamano = 0;
     
     public ListaDobleCircular(){
-        primero = ultimo = null;
+        this.primero = this.ultimo = null;
     }
     
     public void agregar(int dato){
