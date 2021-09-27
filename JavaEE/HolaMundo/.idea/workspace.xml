@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1192b99c-1800-4661-bde5-4aae5b925e10" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../01-MundoPc/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../01-MundoPc/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01-MundoPc/target/classes/controlador/Orden.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../01-MundoPc/target/classes/controlador/Orden.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01-MundoPc/target/classes/modelos/Computadora.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../01-MundoPc/target/classes/modelos/Computadora.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01-MundoPc/target/classes/modelos/DispositivoEntrada.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../01-MundoPc/target/classes/modelos/DispositivoEntrada.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01-MundoPc/target/classes/modelos/Monitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../01-MundoPc/target/classes/modelos/Monitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01-MundoPc/target/classes/modelos/Raton.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../01-MundoPc/target/classes/modelos/Raton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01-MundoPc/target/classes/modelos/Teclado.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../01-MundoPc/target/classes/modelos/Teclado.class" afterDir="false" />
-    </list>
+    <list default="true" id="1192b99c-1800-4661-bde5-4aae5b925e10" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +22,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ProgramacionFuncional" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

@@ -17,7 +17,7 @@ public class Main {
 
         //ejemplosStream();
 
-        ejerciciosStream();
+        //ejerciciosStream();
 
     }
 
@@ -176,22 +176,48 @@ public class Main {
         cursos.add(new Curso("Cursos profesional de Escritura", 1.5f, 10, 300 ));
 
         //Ejercicio 1: Obtener la cantidad de cursos con una duración mayor a 5 horas.
+        int mayorCincoHoras = (int) cursos.stream().filter(curso -> curso.getDuracion() > 5).count();
+        System.out.println("Cursos con duración mayor a 5 horas: " + mayorCincoHoras + "\n");
 
         //Ejercicio 2: Obtener la cantidad de cursos con una duración menor a 2 horas.
+        int menorDosHoras = (int) cursos.stream().filter(curso -> curso.getDuracion() < 2).count();
+        System.out.println("Cursos con duración menor a 2 horas: " + menorDosHoras + "\n");
 
         //Ejercicio 3: Listar el título de todos aquellos cursos con una cantidad de vídeos mayor a 50.
+        System.out.println("Título de cursos con mas de 50 videos:");
+        cursos.stream().filter(curso -> curso.getVideos() > 50).forEach(curso -> {
+            System.out.println(curso.getTitulo());
+        });
 
         //Ejercicio 4: Mostrar en consola el título de los 3 cursos con mayor duración.
+        Comparator<Curso> comparadorDuración = Comparator.comparing(Curso::getDuracion);
+
+        System.out.println("\nTítulo de los 3 cursos con mayor duración:");
+        cursos.stream().sorted(comparadorDuración.reversed()).limit(3).forEach(curso -> {
+            System.out.println(curso.getTitulo());
+        });
 
         //Ejercicio 5: Mostrar en consola la duración total de todos los cursos.
+        double duracionTotal = cursos.stream().mapToDouble(Curso::getDuracion).sum();
+        System.out.println("\nLa duración total de todos los cursos es: " + duracionTotal);
 
         //Ejercicio 6: Mostrar en consola todos aquellos libros que superen el promedio en cuanto a duración se refiere.
+        double promedioDuracion = cursos.stream().mapToDouble(Curso::getDuracion).average().orElse(0);
+        System.out.println("\nCursos que superan el promedio de duracion: ");
+        cursos.stream().filter(curso -> curso.getDuracion() > promedioDuracion).forEach(System.out::println);
 
         //Ejercicio 7: Mostrar en consola la duración de todos aquellos cursos que tengan una cantidad de alumnos inscritos menor a 500.
+        System.out.println("\nDuración de cursos con menos de 500 alumnos");
+        cursos.stream().filter(curso -> curso.getAlumnos() < 500).forEach(curso -> System.out.println(curso.getDuracion()));
 
         //Ejercicio 8: Obtener el curso con mayor duración.
+        Curso cursoMayorDuracion = cursos.stream().max(comparadorDuración).orElse(null);
+        System.out.println("\nCurso con mayor duración: " + cursoMayorDuracion);
 
         //Ejercicio 9: Crear una lista de Strings con todos los titulos de los cursos.
+        System.out.println("\nTítulo de todos los cursos: ");
+        List<String> titulos = cursos.stream().map(Curso::getTitulo).collect(Collectors.toList());
+        titulos.forEach(System.out::println);
     }
 
 }
